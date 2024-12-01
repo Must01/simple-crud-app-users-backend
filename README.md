@@ -4,7 +4,6 @@ A lightweight backend application built with Node.js, Express, and MongoDB, desi
 
 ---
 
-```bash
 # **Features**
 - RESTful APIs for user management:
   - Create new users.
