@@ -1,7 +1,3 @@
-Based on your previous request and the file structure you've shown, I'll simplify the `README.md` and ensure it covers the key details for setting up and using your backend project.
-
-Here’s a simpler version of the `README.md`:
-
 # Simple CRUD App: Users Backend
 
 A simple Node.js backend for managing users with MongoDB.
