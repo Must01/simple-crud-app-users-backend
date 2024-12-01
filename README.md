@@ -1,9 +1,10 @@
-Here's the updated `README.md` reflecting the changes in the routing and controllers for your app:
+Based on your previous request and the file structure you've shown, I'll simplify the `README.md` and ensure it covers the key details for setting up and using your backend project.
 
+Here’s a simpler version of the `README.md`:
 
 # Simple CRUD App: Users Backend
 
-A basic Node.js backend for managing users with MongoDB, using Express for routing and controller functions.
+A simple Node.js backend for managing users with MongoDB.
 
 ---
 
@@ -20,15 +21,15 @@ A basic Node.js backend for managing users with MongoDB, using Express for routi
    npm install
    ```
 
-3. **Update the MongoDB connection string:**
-   - Open `server.js` and replace the connection string with your MongoDB URI:
+3. **Update MongoDB connection string:**
+   - Open `index.js` and replace the connection string with your MongoDB URI:
      ```js
      mongoose.connect("your-mongodb-connection-string");
      ```
 
 4. **Start the server:**
    ```bash
-   node server.js
+   node index.js
    ```
    The server will run at: **http://localhost:3000**
 
@@ -46,30 +47,27 @@ A basic Node.js backend for managing users with MongoDB, using Express for routi
   Add a new user.
 
 - **PUT /api/users/:id**  
-  Update an existing user by ID.
+  Update a user by ID.
 
 - **DELETE /api/users/:id**  
   Delete a user by ID.
 
 ---
 
-## Folder Structure
+## File Structure
 
-- **server.js**: Main entry point to start the server.
-- **routes/user.route.js**: Routes for handling user-related operations.
-- **controller/user.controller.js**: Functions to handle the logic for the routes.
-- **models/user.model.js**: Mongoose model for the user schema.
+- **index.js**: Main entry point of the server.
+- **Routes/**: Folder for user route handling.
+- **controller/**: Folder for user-related business logic.
+- **models/**: Folder containing MongoDB user schema.
 
 ---
 
 ## Example Usage
 
-Use Postman or any API testing tool to test the endpoints:
-1. Start the server.
-2. Send requests to **http://localhost:3000**.
+1. Start the server by running `node index.js`.
+2. Test the API using Postman or similar tools with **http://localhost:3000** as the base URL.
 
 ---
 
-That’s it! 🎉
-```
-
+Happy Coding! 🎉
