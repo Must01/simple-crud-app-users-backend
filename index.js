@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose"); // import mongoose
 const app = express();
 const userRoute = require("./Routes/user.route.js");
+require("dotenv").config();
 
 // Middleware to parse JSON
 app.use(express.json());
@@ -11,9 +12,7 @@ app.use("/api/users", userRoute);
 
 // Connect to DB and run the server on port 3000
 mongoose
-  .connect(
-    "mongodb+srv://mustaphabouddahr347:HDzdEn6wLpBgYawD@backenddb.0e8nr.mongodb.net/?retryWrites=true&w=majority&appName=backendDB"
-  )
+  .connect(process.env.MONGO_URL)
   .then(() => {
     // database connected successfully
     console.log("Connected!");
