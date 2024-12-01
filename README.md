@@ -18,9 +18,9 @@ A simple Node.js backend for managing users with MongoDB.
    ```
 
 3. **Update MongoDB connection string:**
-   - Open `index.js` and replace the connection string with your MongoDB URI:
-     ```js
-     mongoose.connect("your-mongodb-connection-string");
+   - Add and `.env` file with the connection string to your MongoDB URI:
+     ```.env
+     MONGO_URL=your-mongodb-connection-string
      ```
 
 4. **Start the server:**
